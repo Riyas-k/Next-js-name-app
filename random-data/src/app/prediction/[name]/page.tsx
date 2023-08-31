@@ -1,16 +1,16 @@
 import React from 'react';
 
-const getPredictedAge = async (name) => {
+const getPredictedAge = async (name:string) => {
   const res = await fetch(`https://api.agify.io?name=${name}`);
   return res.json();
 };
 
-const getPredictedGender = async (name) => {
+const getPredictedGender = async (name:string) => {
   const res = await fetch(`https://api.genderize.io?name=${name}`);
   return res.json();
 };
 
-const getPredictedNationality = async (name) => {
+const getPredictedNationality = async (name:string) => {
   const res = await fetch(`https://api.nationalize.io?name=${name}`);
   return res.json();
 };
